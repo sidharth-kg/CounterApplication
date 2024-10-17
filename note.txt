@@ -1,0 +1,30 @@
+The Redux Toolkit package is intended to be the standard way to write Redux logic. It was originally created to help address three common concerns about Redux:
+
+"Configuring a Redux store is too complicated"
+"I have to add a lot of packages to get Redux to do anything useful"
+"Redux requires too much boilerplate code"
+
+boilerplate
+------------
+usage of code repeatedly 
+
+steps
+------
+install
+npm install @reduxjs/toolkit
+npm install react-redux
+
+create slice using createSlice method which returns both actions and reducers automatically
+export actions and reducer seperately since action is need for components and reduce is need for store
+create store usinge cofigurestore method
+place the reducer in the reducer key
+make the state in the store globally accessible by wrapping the app components(root component) inside the provider tag
+use dispatch hook to call action
+useSelecter hook is used to access the state
+
+Advantage
+----------
+1)easy Configure store
+2)reduce installation of large amount of packages
+3)eliminate boilerplate code
+
